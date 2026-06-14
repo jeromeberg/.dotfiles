@@ -1,0 +1,30 @@
+[user]
+	name = Jerome Berg
+	email = 77480853+jeromeberg@users.noreply.github.com
+[include]
+    path = ~/.config/git/alias
+[core]
+	excludesfile = ~/.config/git/ignore
+	pager = less -R
+	autocrlf = input
+[push]
+    default = current
+    autoSetupRemote = true # auto set upstream on push
+[merge]
+	conflictstyle = zdiff3
+[diff]
+    algorithm = histogram
+	# moved lines shown in different color than changed
+    colorMoved = default
+[rebase]
+    autostash = true
+[init]
+    defaultBranch = main
+[fetch]
+    prune = true
+    prunetags = true
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process

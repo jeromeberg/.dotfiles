@@ -1,0 +1,82 @@
+# yabai, skhd
+tap "asmvik/formulae"
+brew "asmvik/formulae/yabai"
+brew "asmvik/formulae/skhd"
+
+# replace macos git and python
+brew "git"
+brew "python3"
+
+# utilities
+brew "wget"
+brew "bat"
+brew "fastfetch"
+# brew "thefuck" # https://github.com/nvbn/thefuck
+brew "ffmpeg"
+brew "fzf"
+brew "stow"
+brew "tree"
+brew "nmap"
+brew "z"
+brew "fd"
+
+# zsh
+brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
+
+# dev
+cask "xquartz" # x11 for macOS
+brew "cmake"
+brew "go"
+brew "node"
+brew "yarn"
+brew "gh" # github cli
+brew "arduino-cli"
+cask "arduino-ide"
+
+# docker
+brew "docker"
+brew "docker-buildx"
+brew "docker-compose"
+brew "lazydocker" # docker tui
+
+# apps
+cask "maccy"
+cask "rectangle"
+cask "firefox"
+cask "visual-studio-code"
+cask "ollama"
+cask "bruno"
+cask "vlc"
+cask "iina"
+cask "utm"
+cask "transmission"
+# brew "lima"
+cask "maccy"
+cask "iterm2"
+cask "orbstack"
+cask "brave-browser"
+cask "claude"
+cask "stats"
+cask "raspberry-pi-imager"
+cask "obsidian"
+cask "copilot-cli"
+brew "restic"
+brew "yt-dlp"
+
+# vscode
+vscode "mechatroner.rainbow-csv"
+vscode "ms-vscode.cmake-tools"
+vscode "ms-vscode.cpp-devtools"
+vscode "ms-vscode.cpptools"
+vscode "ms-vscode.cpptools-extension-pack"
+vscode "ms-vscode.cpptools-themes"
+vscode "ms-vscode.vscode-serial-monitor"
+vscode "platformio.platformio-ide"
+vscode "espressif.esp-idf-extension"
+vscode "github.vscode-pull-request-github"
+vscode "tomoki1207.pdf"
+vscode "vscodevim.vim"
+vscode "yzhang.markdown-all-in-one"
+# vscode "dokca.42-ft-count-line"
+# vscode "kube.42header"

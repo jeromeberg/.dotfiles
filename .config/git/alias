@@ -1,0 +1,20 @@
+[alias]
+	# show pretty logs
+	pretty = log --graph --oneline --all --decorate
+	# unstage
+	unstage-all = reset HEAD --
+    unstage = restore --staged
+	# undo last commit, keep changes
+	undo = reset --soft HEAD~1
+	# show last commit
+	last = log -1 HEAD --stat
+	# concise status
+	s = status -sb
+	# list all aliases
+    aliases = config --get-regexp alias
+	# delete branches already merged into main
+	cleanup = !git branch --merged main | grep -v 'main' | xargs git branch -d
+	# git commit -m
+	cm = commit -m
+	# push force
+	force = git push --force-with-lease

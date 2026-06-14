@@ -1,0 +1,14 @@
+set number
+"set relativenumber
+syntax on
+set background=dark
+set mouse=a
+set laststatus=2
+set showmode
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+"set autoindent
+set cursorline
+"set colorcolumn=80
