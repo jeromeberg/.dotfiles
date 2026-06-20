@@ -58,6 +58,10 @@ hash -d dl=~/Downloads   # ~dl
 hash -d dot=~/.dotfiles  # ~dot
 hash -d dsk=~/Desktop    # ~dsk
 
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
 # shell
 setopt interactive_comments
 setopt no_beep
@@ -65,7 +69,11 @@ setopt no_flow_control
 bindkey -v
 
 # prompt
-PROMPT='%B%~ $ %b'
+autoload -Uz vcs_info
+precmd() { vcs_info }
+zstyle ':vcs_info:git:*' formats ' %F{blue}(%b)%f'
+setopt PROMPT_SUBST
+PROMPT='%B%~${vcs_info_msg_0_} $ %b'
 
 export LANG='en_US.UTF-8'
 export LC_ALL='en_US.UTF-8'

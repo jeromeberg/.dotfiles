@@ -19,19 +19,19 @@ My config files and scripts for macOS, managed with [GNU Stow](https://www.gnu.o
 
 ```
 .
-├── .config
-│   ├── git
-│   ├── skhd
-│   ├── yabai
-│   └── zsh
-├── .vim/.vimrc
-├── Library/LaunchAgents
-└── tools
+├── .config/
+│   ├── git/
+│   ├── skhd/
+│   ├── yabai/
+│   └── zsh/
+├── .vimrc
+├── Library/LaunchAgents/
+└── tools/
     ├── Brewfile
     ├── defaults.sh
-    ├── iterm2
-    ├── restic
-    └── stats
+    ├── iterm2/
+    ├── restic/
+    └── stats/
 ```
 
 ## Quick start
@@ -77,6 +77,10 @@ Runs every 24h via launchd script.
 # add password using keychain
 security add-generic-password -a jerome -s restic -w "strong_password"
 
+# edit variables in .env.sh
+export RESTIC_REPOSITORY=/Volumes/Freebox/Backups/jerome
+export RESTIC_PASSWORD_COMMAND="security find-generic-password -a jerome -s restic -w"
+
 # init restic repo
 restic init
 ```
@@ -103,6 +107,7 @@ restic snapshots
 - History and navigation options
 - Colors
 - Homebrew, fzf, and zoxide setup
+- Git branch in PROMPT
 - Platformio setup
 - Local override file (`~/.zshrc.local`)
 - Plugins: `zsh-autosuggestions`, `zsh-syntax-highlighting`
@@ -120,6 +125,7 @@ restic snapshots
 - `h`: history
 - `reload`: reload `.zshrc` file
 - `mkcd`: mkdir + cd in new directory
+- `..`, `...` and `....` aliases
 </details>
 
 <details>
@@ -210,7 +216,7 @@ Terminal emulator for macOS.
 
 1. Open **iTerm2** -> **Settings** -> **General** -> **Preferences**.
 2. Enable "**Load preferences from a custom folder or URL**".
-3. Set the folder to `~/.config/iterm2`.
+3. Set the folder to `~/.dotfiles/tools/iterm2`.
 
 ### Stats
 
