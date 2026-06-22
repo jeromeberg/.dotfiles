@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-source "${HOME}/.dotfiles/.config/tools/restic/env.sh"
+source "${HOME}/.dotfiles/tools/restic/env.sh"
 
 notifications_enabled=0
 

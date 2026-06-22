@@ -88,7 +88,7 @@ export VISUAL="$EDITOR"
 alias ip='ipconfig getifaddr en0'  # local ip en0, macOS
 
 # restic
-alias backup='bash ~/.config/restic/backup.sh'
+alias backup='bash ~/.dotfiles/tools/restic/backup.sh'
 
 # bear
 alias bearcli='/Applications/Bear.app/Contents/MacOS/bearcli'
